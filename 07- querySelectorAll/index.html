@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htm lang="pt-br">
+<head>
+	<meta <meta charset="utf-8">
+	<title>DOM - querySelectorAll</title>
+
+</head>
+
+<body>
+
+	<div class="teste">1</div>
+	<div class="teste">2</div>
+	<div class="teste">3</div>
+
+	<div id="pai">
+		<div class="filho">1</div>
+		<div class="filho">2</div>
+		<div class="filho">3</div>
+	</div>
+
+	<div id="paizao">
+		<div class="filho">alo</div>
+		<div class="filho">oi</div>
+		<div class="filho">olá</div>
+	</div>
+
+    <p>oi</p>
+	<p>olá</p>
+
+
+<script>
+	/*console.log(
+
+		//document.querySelectorAll(".teste")
+		document.getElementById("paizao").querySelectorAll(".filho")[0].innerHTML
+
+	)*/
+
+	if (document.getElementById("pai").querySelectorAll(".filho").length > 1)
+		console.log("oi");
+		
+</script>
+
+</body>
+</html>
